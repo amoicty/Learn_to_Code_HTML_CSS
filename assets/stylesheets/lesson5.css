@@ -36,8 +36,9 @@ code{
 }
 
 section{
-  float: left;
-  width: 63%;
+  display: inline-block;
+  width: 30%;
+  border: solid 1px black;
 }
 
 aside{
