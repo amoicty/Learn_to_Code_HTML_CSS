@@ -1,5 +1,5 @@
 code{
-  background: #2db34a;
+  background: #ccccff;
   color: #fff;
   font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
   display: block;
@@ -14,13 +14,30 @@ code{
   the element's parent element's width, 
   and it is always based on the WIDTH!!
  */
-header, section, aside, footer{
+.group, header, section, aside, footer{
   padding: 0 1.5% 24px 1.5%;
+}
+
+.group:before, 
+.group:after{
+  content: "";
+  display: table;
+}
+
+.group:after{
+  clear: both;
+}
+
+.group{
+  background: #eaeaed;
+  clear: both;
+  *zoom: 1;
+  border-radius: 6px;
 }
 
 section{
   float: left;
-  width: 30%;
+  width: 63%;
 }
 
 aside{
@@ -29,6 +46,5 @@ aside{
 }
 
 footer{
-  clear: both;
   padding-bottom: 0;
 }
