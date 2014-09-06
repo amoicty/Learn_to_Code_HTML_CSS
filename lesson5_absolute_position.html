@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Relative Position</title>
+  <style>
+    section{
+      background: #eaeaed;
+      position: relative;
+      height: 140px;
+    }
+    .offset, code{
+      height: 90px;
+      width: 160px;
+      position: absolute;
+    }
+    .offset{
+      border: 2px dashed;
+      top: 0;
+      right: 0;
+    }
+    .offset code{
+      display: block;
+      background: #0e0;
+      top: 20px;
+      right: 20px;
+    }
+  </style>
+</head>
+<body>
+  <section>
+  <div class="offset">The div element<code>The code element</code></div>
+  </section>
+</body>
+</html>
