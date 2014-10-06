@@ -53,6 +53,7 @@ table {
   ========================================
 */
 body{
+  background: #293f50;
   color: #888;
   font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -170,6 +171,16 @@ body{
   *zoom: 1;
 }
 
+/*
+  ========================================
+  Rows
+  ========================================
+*/
+.row{
+  background: #fff;
+  min-width: 960px;
+  padding: 66px 0 44px 0;
+}
 
 /*
   ========================================
@@ -239,6 +250,14 @@ a:hover{
 p a{
   border-bottom: 1px solid #dfe2e5;
 }
+
+.primary-header a, .primary-footer a{
+  color: #fff;
+}
+
+.primary-header a:hover, .primary-footer a:hover{
+  color: #648880;
+}
 /*
   ========================================
   Buttons
@@ -249,11 +268,21 @@ p a{
   margin: 0;
   border-radius: 5px;
   display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: .5px;
+  text-transform: uppercase;
 }
 
 .btn-alt{
-  border: 1px solid #dfe2e5;
+  border: 1px solid #fff;
   padding: 10px 30px;
+}
+
+.btn-alt{
+  background: #fff;
+  color: #648880;
 }
 
 /*
@@ -263,6 +292,7 @@ p a{
 */
 
 .hero{
+  color: #fff;
   padding: 22px 80px 66px 80px;
   line-height: 44px;
   text-align: center;
